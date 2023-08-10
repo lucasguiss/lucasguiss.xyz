@@ -1,6 +1,25 @@
 <template>
+  <NuxtLoadingIndicator />
   <NuxtPage />
 </template>
+<script setup lang="ts">
+useHead({
+  title: 'Lucas Guiss Gusmão',
+  meta: [
+    { name: 'description', content: 'Software Engineer Personal Portfolio' }
+  ],
+  htmlAttrs: {
+    lang: 'pt-BR'
+  },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/public/favicon.ico'
+    }
+  ]
+})
+</script>
 <style>
 @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 

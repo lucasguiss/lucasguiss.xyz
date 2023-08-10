@@ -3,7 +3,7 @@
         <div class="presentation">
             <div class="info">
                 <div class="title">
-                    <img class="avatar" alt="Avatar" src="https://avatars.githubusercontent.com/u/37088202" />
+                    <nuxt-img class="avatar" alt="Avatar" src="https://avatars.githubusercontent.com/u/37088202" lazy />
                     <div class="asd">
                         <p>Lucas Guiss Gusmão </p>
                         <p>Software Engineer @ROIT </p>
@@ -15,12 +15,12 @@
                     environments.
                 </p>
                 <div class="icons">
-                    <NuxtLink to="https://www.github.com/lucasguiss" target="_blank"> <GithubIcon /> </NuxtLink>
-                    <NuxtLink to="https://www.linkedin.com/in/lucasguissgusmao" target="_blank"> <LinkedinIcon /> </NuxtLink>
+                    <NuxtLink to="https://www.github.com/lucasguiss" target="_blank" rel="Github profile"> <GithubIcon /> </NuxtLink>
+                    <NuxtLink to="https://www.linkedin.com/in/lucasguissgusmao" target="_blank" rel="Linkedin profile"> <LinkedinIcon /> </NuxtLink>
                 </div>
             </div>
             <div>
-                <NuxtLink class="contact" to="/contact">Contact <ArrowIcon/> </NuxtLink>
+                <NuxtLink class="contact" to="/contact" rel="Contact page">Contact <ArrowIcon/> </NuxtLink>
             </div>
         </div>
     </div>
@@ -32,6 +32,15 @@ const ICON_COLOR = 'F2F4F7' as const
 const GithubIcon = h(Icon, { name: 'uil:github', color: ICON_COLOR })
 const LinkedinIcon = h(Icon, { name: 'uil:linkedin', color: ICON_COLOR })
 const ArrowIcon = h(Icon, { name: 'ic:baseline-arrow-outward', color: ICON_COLOR, size: '1.25rem'})
+
+useSeoMeta({
+  title: 'Lucas Guiss Gusmão',
+  ogTitle: 'Lucas Guiss Gusmão',
+  description: 'Software Engineer',
+  ogDescription: 'Software Engineer',
+  ogImage: 'https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/alfa.png',
+  ogUrl: 'https://lucasguiss.xyz'
+})
 
 </script>
 <style>
