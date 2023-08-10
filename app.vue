@@ -11,6 +11,7 @@ html {
   padding: 0;
   background-color: #2C3333;
   font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 }
 
 * {
