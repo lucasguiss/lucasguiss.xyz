@@ -1,6 +1,3 @@
 <template>
-        <p>{{ $t('temp') }} lucasguissgusmao@gmail.com</p>
+    <p>In construction</p>
 </template>
-<style>
-
-</style>
