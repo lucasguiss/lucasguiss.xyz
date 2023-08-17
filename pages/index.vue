@@ -19,9 +19,9 @@
                     <NuxtLink to="https://www.linkedin.com/in/lucasguissgusmao" target="_blank" rel="Linkedin profile"> <LinkedinIcon /> </NuxtLink>
                 </div>
             </div>
-            <div>
-                <NuxtLink class="contact" to="/contact" rel="Contact page">Contact <ArrowIcon/> </NuxtLink>
-            </div>
+            <!-- <div> TODO: implement page
+                <NuxtLink class="contact" to="/contact" rel="Contact page">{{ $t('contact') }}<ArrowIcon/> </NuxtLink>
+            </div> -->
         </div>
     </div>
 </template>
