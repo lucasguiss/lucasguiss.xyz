@@ -1,6 +1,7 @@
 <template>
-  <NuxtLoadingIndicator />
-  <NuxtPage />
+    <TheHeader />
+    <NuxtPage />
+    <TheFooter />
 </template>
 <script setup lang="ts">
 useHead({

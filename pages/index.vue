@@ -6,14 +6,10 @@
                     <nuxt-img class="avatar" alt="Avatar" src="https://avatars.githubusercontent.com/u/37088202" lazy />
                     <div class="asd">
                         <p>Lucas Guiss Gusmão </p>
-                        <p>Software Engineer @ROIT </p>
+                        <p>{{ $t('job') }}</p>
                     </div>
                 </div>
-                <p class="description">I am a Software Engineer based in Brazil with extensive experience in software
-                    development and system architecture.
-                    My career reflects my ability to provide creative and efficient solutions in dynamic development
-                    environments.
-                </p>
+                <p class="description">{{ $t('description') }}</p>
                 <div class="icons">
                     <NuxtLink to="https://www.github.com/lucasguiss" target="_blank" rel="Github profile"> <GithubIcon /> </NuxtLink>
                     <NuxtLink to="https://www.linkedin.com/in/lucasguissgusmao" target="_blank" rel="Linkedin profile"> <LinkedinIcon /> </NuxtLink>
