@@ -6,7 +6,9 @@
 <style>
 .footer {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: end;
+    margin: 2rem;
+    padding-top: 7rem;
 }
 </style>
