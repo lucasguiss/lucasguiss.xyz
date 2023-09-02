@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem;
-    padding-top: 7rem;
+    margin-bottom: 2rem;
 }
 </style>

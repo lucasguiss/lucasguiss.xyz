@@ -17,7 +17,9 @@
     "nuxt-icon": "^0.5.0"
   },
   "dependencies": {
+    "@nuxt/image": "0.7.1",
     "@nuxtjs/i18n": "8.0.0-rc.3",
-    "@nuxt/image": "0.7.1"
+    "dotenv": "^16.3.1",
+    "resend": "1.0.0"
   }
 }
