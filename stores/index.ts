@@ -1,1 +1,1 @@
-export * from "./aside-content-store"
+export * from "./main-content-store"

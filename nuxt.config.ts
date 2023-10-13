@@ -1,10 +1,6 @@
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
-
-    timeline: {
-      enabled: true
-    }
   },
   typescript: {
     strict: true
@@ -22,5 +18,7 @@ export default defineNuxtConfig({
       Poppins: [400, 500, 600]
     }
   },
-  ssr: true
+  routeRules: {
+    '/': { prerender: true },
+  }
 })

@@ -1,1 +1,1 @@
-export * from "./aside-content"
+export * from "./main-content"
