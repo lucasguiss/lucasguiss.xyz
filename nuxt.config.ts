@@ -1,12 +1,16 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  typescript: {
+    strict: true
+  },
   routeRules: {
     '/': { prerender: true }
   },
   modules: [
     'nuxt-icon',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@pinia/nuxt',
   ],
   ssr: false,
   tailwindcss: {

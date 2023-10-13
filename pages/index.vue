@@ -23,4 +23,12 @@
   </footer>
 </template>
 <script setup lang="ts">
+import { useAsideContentStore } from '@/stores';
+
+const store = useAsideContentStore()
+
+onBeforeUnmount(() => {
+  store.resetContent()
+})
+
 </script>
