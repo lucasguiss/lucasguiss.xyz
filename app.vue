@@ -4,13 +4,23 @@
     <TheFooter />
 </template>
 <script setup lang="ts">
+
+useSeoMeta({
+  title: 'Lucas Guiss',
+  ogTitle: 'Lucas Guiss',
+  description: 'Software Engineer | Tech Leader',
+  ogDescription: 'Software Engineer | Tech Leader',
+  ogImage: 'https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/alfa.png',
+  ogUrl: 'https://lucasguiss.xyz'
+})
+
 useHead({
-  title: 'Lucas Guiss Gusmão',
+  title: 'Lucas Guiss',
   meta: [
-    { name: 'description', content: 'Software Engineer Personal Portfolio' }
+    { name: 'description', content: 'Personal Website' }
   ],
-  htmlAttrs: {
-    lang: 'pt-BR'
+  bodyAttrs: {
+    class: 'm-0 p-0 box-border bg-midnight w-full h-full font-poppins'
   },
   link: [
     {
@@ -21,19 +31,3 @@ useHead({
   ]
 })
 </script>
-<style>
-@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  background-color: #1E1E1E;
-  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-  color: #F2F4F7;
-}
-
-* {
-  box-sizing: border-box;
-}
-</style>
