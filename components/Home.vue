@@ -8,11 +8,11 @@
         </p>
         <div class="pt-40 flex flex-row justify-center">
             <a href="https://github.com/lucasguiss" target="_blank"
-                class="i-mdi-github-box bg-lime hover:bg-mint text-5xl"></a>
+                class="i-mdi-github-box bg-lime hover:bg-mint text-5xl" aria-label="Redirect to my GitHub page"></a>
             <a href="https://www.linkedin.com/in/lucasguissgusmao/" target="_blank"
-                class="i-mdi-linkedin-box bg-lime hover:bg-mint text-5xl"></a>
+                class="i-mdi-linkedin-box bg-lime hover:bg-mint text-5xl" aria-label="Redirect to my Linkedin page"></a>
             <a href="https://twitter.com/lucasguiss" target="_blank"
-                class="i-mdi-twitter-box bg-lime hover:bg-mint text-5xl"></a>
+                class="i-mdi-twitter-box bg-lime hover:bg-mint text-5xl" aria-label="Redirect to my Twitter (X) page"></a>
         </div>
     </section>
 </template>
