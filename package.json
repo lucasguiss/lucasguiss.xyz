@@ -13,13 +13,14 @@
     "@nuxtjs/google-fonts": "^3.0.2",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.17.3",
-    "nuxt": "^3.6.5",
-    "nuxt-icon": "^0.5.0"
+    "nuxt": "^3.6.5"
   },
   "overrides": {
     "vue": "latest"
   },
   "dependencies": {
+    "@egoist/tailwindcss-icons": "^1.4.0",
+    "@iconify-json/mdi": "^1.1.54",
     "@pinia/nuxt": "^0.5.0",
     "pinia": "^2.1.7"
   }

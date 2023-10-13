@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     '/': { prerender: true }
   },
   modules: [
-    'nuxt-icon',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     '@pinia/nuxt',
