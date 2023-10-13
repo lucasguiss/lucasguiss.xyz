@@ -1,0 +1,1 @@
+export type AsideContent = "none" | "about" | "resume"
