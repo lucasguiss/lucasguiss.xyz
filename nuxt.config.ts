@@ -3,9 +3,6 @@ export default defineNuxtConfig({
   typescript: {
     strict: true
   },
-  routeRules: {
-    '/': { prerender: true }
-  },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
