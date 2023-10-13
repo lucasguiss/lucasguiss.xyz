@@ -9,16 +9,23 @@ useSeoMeta({
   description: 'Software Engineer | Tech Leader',
   ogDescription: 'Software Engineer | Tech Leader',
   ogImage: 'https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/alfa.png',
-  ogUrl: 'https://lucasguiss.xyz'
+  ogUrl: 'https://lucasguiss.xyz',
+  twitterTitle: 'Lucas Guiss',
+  twitterDescription: 'Software Engineer | Tech Leader',
+  twitterImage: 'https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/main/images/alfa.png',
+  twitterCard: 'summary'
 })
 
 useHead({
   title: 'Lucas Guiss',
   meta: [
-    { name: 'description', content: 'Personal Website' }
+    { name: 'description', content: 'Software Engineer | Tech Leader ' }
   ],
   bodyAttrs: {
     class: 'm-0 p-0 box-border bg-midnight w-full h-full font-poppins'
+  },
+  htmlAttrs: {
+    lang: 'en'
   },
   link: [
     {
