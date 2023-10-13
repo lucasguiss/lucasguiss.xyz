@@ -17,5 +17,8 @@ export default defineNuxtConfig({
     families: {
       Poppins: [400, 500, 600]
     }
+  },
+  routeRules: {
+    '/': { prerender: true },
   }
 })
