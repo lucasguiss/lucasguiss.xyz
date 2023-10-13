@@ -6,6 +6,7 @@ export default <Partial<Config>>{
         colors: {
             'midnight': '#03071E',
             'offwhite': '#E9ECEF',
+            'grey': '#D1D1D1',
             'lime': '#70F996',
             'mint': '#B9FFCD'
         },
@@ -15,7 +16,7 @@ export default <Partial<Config>>{
     },
     plugins: [
         iconsPlugin({
-          collections: getIconCollections(["mdi"]),
+            collections: getIconCollections(["mdi"]),
         }),
-      ],
+    ],
 }

@@ -1,10 +1,6 @@
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
-
-    timeline: {
-      enabled: true
-    }
   },
   typescript: {
     strict: true
@@ -21,6 +17,5 @@ export default defineNuxtConfig({
     families: {
       Poppins: [400, 500, 600]
     }
-  },
-  ssr: true
+  }
 })
