@@ -7,7 +7,7 @@ export const useAsideContentStore = defineStore('asideContent', {
     content: "none" as AsideContent
   }),
   getters: {
-    content: (state) => state.content
+    getContent: (state) => state.content
   },
   actions: {
     setContent (content: AsideContent) {
