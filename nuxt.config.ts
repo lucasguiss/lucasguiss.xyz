@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@pinia/nuxt',
   ],
-  ssr: false,
   tailwindcss: {
     configPath: 'tailwind.config.ts'
   },
