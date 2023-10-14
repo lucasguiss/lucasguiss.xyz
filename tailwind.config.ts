@@ -12,7 +12,12 @@ export default <Partial<Config>>{
         },
         fontFamily: {
             'poppins': ['Poppins', 'sans-serif'],
-        }
+        },
+        extend: {
+            width: {
+              '128': '41rem',
+            }
+          }
     },
     plugins: [
         iconsPlugin({
