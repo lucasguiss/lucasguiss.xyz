@@ -1,4 +1,4 @@
-go check out https://lucasguiss.xyz
+go check out https://lucasguiss.dev
 
 this includes:
 
