@@ -1,0 +1,2 @@
+pnpm exec next lint
+pnpm exec lint-staged

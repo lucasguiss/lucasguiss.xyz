@@ -1,150 +1,203 @@
 @import 'tailwindcss';
 
 ::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+	background-color: #47a3f3;
+	color: #fefefe;
 }
 
-:root {
-  --sh-class: #2d5e9d;
-  --sh-identifier: #354150;
-  --sh-sign: #8996a3;
-  --sh-string: #007f7a;
-  --sh-keyword: #e02518;
-  --sh-comment: #a19595;
-  --sh-jsxliterals: #6266d1;
-  --sh-property: #e25a1c;
-  --sh-entity: #e25a1c;
-}
+@layer base {
+	html {
+		@apply text-ctp-latte-text bg-ctp-latte-base;
+	}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
-}
+	html.dark {
+		@apply text-ctp-mocha-text bg-ctp-mocha-base;
+	}
 
-html {
-  min-width: 360px;
+	html {
+		min-width: 360px;
+	}
 }
 
 .prose .anchor {
-  @apply absolute invisible no-underline;
+	@apply absolute invisible no-underline;
 
-  margin-left: -1em;
-  padding-right: 0.5em;
-  width: 80%;
-  max-width: 700px;
-  cursor: pointer;
+	margin-left: -1em;
+	padding-right: 0.5em;
+	width: 80%;
+	max-width: 700px;
+	cursor: pointer;
 }
 
 .anchor:hover {
-  @apply visible;
+	@apply visible;
 }
 
 .prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
-}
-
-.prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
-  content: '#';
+	@apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
 }
 
 .prose *:hover > .anchor {
-  @apply visible;
+	@apply visible;
 }
 
 .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
+	@apply rounded-lg overflow-x-auto border py-2 px-3 text-sm;
 }
 
 .prose code {
-  @apply px-1 py-0.5 rounded-lg;
+	@apply px-1 py-0.5 rounded-lg;
 }
 
 .prose pre code {
-  @apply p-0;
-  border: initial;
-  line-height: 1.5;
+	@apply p-0;
+	border: initial;
+	line-height: 1.5;
 }
 
 .prose code span {
-  @apply font-medium;
+	@apply font-medium;
 }
 
 .prose img {
-  /* Don't apply styles to next/image */
-  @apply m-0;
+	/* Don't apply styles to next/image */
+	@apply m-0;
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+	@apply my-4;
 }
 
 .prose h1 {
-  @apply text-4xl font-medium tracking-tight mt-6 mb-2;
+	@apply text-4xl font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+	@apply text-xl font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+	@apply text-xl font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
+	@apply text-lg font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose strong {
-  @apply font-medium;
+	@apply font-medium;
 }
 
 .prose ul {
-  @apply list-disc pl-6;
+	@apply list-disc pl-6;
 }
 
 .prose ol {
-  @apply list-decimal pl-6;
+	@apply list-decimal pl-6;
+}
+
+@keyframes rotate-out {
+	0% {
+		transform: rotate(0deg) scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(180deg) scale(0);
+		opacity: 0;
+	}
+}
+
+@keyframes rotate-in {
+	0% {
+		transform: rotate(-180deg) scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: rotate(0deg) scale(1);
+		opacity: 1;
+	}
 }
 
 .prose > :first-child {
-  /* Override removing top margin, causing layout shift */
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
+	/* Override removing top margin, causing layout shift */
+	margin-top: 1.25em !important;
+	margin-bottom: 1.25em !important;
 }
 
 pre::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 pre {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
-/* Remove Safari input shadow on mobile */
 input[type='text'],
 input[type='email'] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
-table {
-  display: block;
-  max-width: fit-content;
-  overflow-x: auto;
-  white-space: nowrap;
-}
+@theme {
+	/** 
+  Catppuccin mocha palette
+  **/
+	--color-ctp-mocha-rosewater: #f5e0dc;
+	--color-ctp-mocha-flamingo: #f2cdcd;
+	--color-ctp-mocha-pink: #f5c2e7;
+	--color-ctp-mocha-mauve: #cba6f7;
+	--color-ctp-mocha-red: #f38ba8;
+	--color-ctp-mocha-maroon: #eba0ac;
+	--color-ctp-mocha-peach: #fab387;
+	--color-ctp-mocha-yellow: #f9e2af;
+	--color-ctp-mocha-green: #a6e3a1;
+	--color-ctp-mocha-teal: #94e2d5;
+	--color-ctp-mocha-sky: #89dceb;
+	--color-ctp-mocha-sapphire: #74c7ec;
+	--color-ctp-mocha-blue: #89b4fa;
+	--color-ctp-mocha-lavender: #b4befe;
+	--color-ctp-mocha-text: #cdd6f4;
+	--color-ctp-mocha-subtext1: #bac2de;
+	--color-ctp-mocha-subtext0: #a6adc8;
+	--color-ctp-mocha-overlay2: #9399b2;
+	--color-ctp-mocha-overlay1: #7f849c;
+	--color-ctp-mocha-overlay0: #6c7086;
+	--color-ctp-mocha-surface2: #585b70;
+	--color-ctp-mocha-surface1: #45475a;
+	--color-ctp-mocha-surface0: #313244;
+	--color-ctp-mocha-base: #1e1e2e;
+	--color-ctp-mocha-mantle: #181825;
+	--color-ctp-mocha-crust: #11111b;
 
-.title {
-  text-wrap: balance;
+	/**
+  Catpuccin latte palette
+  **/
+	--color-ctp-latte-rosewater: #dc8a78;
+	--color-ctp-latte-flamingo: #dd7878;
+	--color-ctp-latte-pink: #ea76cb;
+	--color-ctp-latte-mauve: #8839ef;
+	--color-ctp-latte-red: #d20f39;
+	--color-ctp-latte-maroon: #e64553;
+	--color-ctp-latte-peach: #fe640b;
+	--color-ctp-latte-yellow: #df8e1d;
+	--color-ctp-latte-green: #40a02b;
+	--color-ctp-latte-teal: #179299;
+	--color-ctp-latte-sky: #04a5e5;
+	--color-ctp-latte-sapphire: #209fb5;
+	--color-ctp-latte-blue: #1e66f5;
+	--color-ctp-latte-lavender: #7287fd;
+	--color-ctp-latte-text: #4c4f69;
+	--color-ctp-latte-subtext1: #5c5f77;
+	--color-ctp-latte-subtext0: #6c6f85;
+	--color-ctp-latte-overlay2: #7c7f93;
+	--color-ctp-latte-overlay1: #8c8fa1;
+	--color-ctp-latte-overlay0: #9ca0b0;
+	--color-ctp-latte-surface2: #acb0be;
+	--color-ctp-latte-surface1: #bcc0cc;
+	--color-ctp-latte-surface0: #ccd0da;
+	--color-ctp-latte-base: #eff1f5;
+	--color-ctp-latte-mantle: #e6e9ef;
+	--color-ctp-latte-crust: #dce0e8;
 }
