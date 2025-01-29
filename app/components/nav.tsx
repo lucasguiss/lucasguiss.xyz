@@ -32,10 +32,9 @@ export function Navbar() {
 										href={path}
 										className="text-2xl p-2 transition-transform transform hover:scale-110"
 									>
-										{' '}
 										<span
 											role="img"
-											aria-label={aria}
+											aria-label={aria || undefined}
 										></span>
 										{icon}
 									</Link>
