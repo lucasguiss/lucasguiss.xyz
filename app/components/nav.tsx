@@ -52,7 +52,7 @@ export function Navbar() {
 						)}
 					</div>
 					<div className="ml-auto space-x-0 pl-10 overflow-hidden">
-						<LanguageToggle />
+						{/* <LanguageToggle /> */}
 						<ToggleMode />
 					</div>
 				</nav>
